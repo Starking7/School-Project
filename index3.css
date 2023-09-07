@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+body{
+    background-color: blue;
+    font-family: sans-serif;
+}
+.links{
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+}
