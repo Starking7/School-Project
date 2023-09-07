@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="outer">
+            <nav>
+                <a href="#" class="logo">Tife's Group</a>
+                <span id="opennav" onclick="opennav()">&#9776;</span>
+                <div id="links">
+                    <a href="">Home</a>
+                    <a href="#Section">About</a>
+                    <a href="">Portfolio</a>
+                    <a href="">Contact</a>
+                    <a href="">Services</a>
+                </div>
+            </nav>
+        </div>
+        <div class="text-box">
+            <p>I'M</p>
+            <h1>Tife</h1>
+            <h3>I DEAL IN REAL ESTATES AND PROJECT WORK</h3>
+
+            <div class="row">
+                <a href="">Explore My Portfolio</a>
+                <a href="">Connect With Me</a>
+                <span>You Can Explore More About My Portfolio And<br> Personal Life Experiences Here.</span>
+            </div>
+
+            
+        </div>
+    </div>
+    <!---SECOND PART--->
+    <section id="Section">
+        <div class="circle"></div>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus reiciendis repudiandae
+                adipisci cupiditate. Ex eos ipsam mollitia, sapiente neque eum aspernatur, dolorem iusto fugiat
+                voluptate id eligendi dicta necessitatibus error.</p>   
+                <a href="#">Learn More</a>
+            </div>    
+            <div class="imgBox">
+                <img src="images/thumb1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li>
+                <img src="images/thumb1.png" style="width: 50px;" onclick="imgslider('img1.png');changeCircleColor('green')">
+            </li>
+            <li>
+                <img src="images/thumb2.png" style="width: 50px;" onclick="imgslider('img2.png');changeCircleColor('blue')">
+            </li>
+            <li>
+                <img src="images/thumb3.png" style="width: 50px;" onclick="imgslider('img3.png');changeCircleColor('red')">
+            </li>
+        </ul>
+        <!-- <ul class="sci">
+            <li><a href="#"><img src="images/Amazing Heritage.jpg" style="width: 50px;"></a></li>
+            <li><a href="#"><img src="images/Amazing Heritage.jpg" style="width: 50px;"></a></li>
+            <li><a href="#"><img src="images/Amazing Heritage.jpg" style="width: 50px;"></a></li>
+        </ul> -->
+    </section>
+
+         <!-- Third Part -->
+    <!-- <div class="tours">
+        <div class="row">
+            <div class="col">
+                <h1>Snacks And Refreshment</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita eius autem iste corrupti obcaecati ullam earum? Perferendis cum cumque debitis. Repellat quod nihil eius consectetur eaque, facilis fugit? Culpa, harum.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <div class="image-gallery">
+                    <img src="./images/3.jpg" style="height: 250px;" alt="">
+                    <img src="./images/4.jpg" style="height: 250px;" alt="">
+                    <img src="./images/Gojo.jpg" style="height: 250px;" alt="">
+                    <img src="./images/3.jpg" style="height: 250px;" alt="">
+                </div>
+            </div>  
+        </div>
+    </div> -->
+
+
+
+
+
+            <!-- second part javascript -->
+    <script type="text/javascript">
+       function imgslider(anything){
+           document.querySelector('.starbucks').src = anything;
+       }
+
+       function changeCircleColor(color){
+           const circle = document.querySelector('.circle');
+           circle.style.background = color;
+       }
+    </script>
+
+    <script src="main.js"></script>
+</body>
+</html>
